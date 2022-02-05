@@ -19,6 +19,6 @@ ENV APACHE_LOG_DIR /var/log/apache2
 
 
 EXPOSE 80
-EXPOSE 82
+
 
 CMD ["/usr/sbin/apache2", "-D",  "FOREGROUND"]
