@@ -13,7 +13,7 @@ node {
       // Stop existing Container
       sh 'docker rm docker_container -f'
       // Start database container here
-      sh "docker run -d --name docker_container -p docker_image:${env.BUILD_NUMBER}"
+      sh "docker run -d --name docker_container -p 80:82 docker_image:${env.BUILD_NUMBER}"
     } 
 	catch (error) {
     } finally {
